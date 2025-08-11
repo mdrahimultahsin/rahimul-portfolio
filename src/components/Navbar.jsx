@@ -7,13 +7,13 @@ import Button from "./Button";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="related">
-      <div className="w-10/12 mx-auto flex justify-between items-center bg-base-200 px-5 py-4 mt-4 rounded-full">
+    <div className="related z-50">
+      <div className="w-10/12 mx-auto flex justify-between items-center bg-base-200 px-5 py-2 lg:py-4 mt-4 rounded-full">
         <div>
           <a href="#" className="bg-gradient-to-r from-primary to-accent text-white btn btn-circle ">RT</a>
         </div>
-        <div className="hidden md:flex">
-          <ul className="flex items-center gap-5 font-heading">
+        <div className="hidden md:flex pl-4">
+          <ul className="flex justify-center items-center gap-5 font-heading">
             <li>
               <a href="#about" className="text-sm font-medium active:text-primary lg:text-base active:border-b-2 border-primary">About Me</a>
             </li>

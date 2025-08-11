@@ -1,15 +1,22 @@
+import About from "./components/About";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="font-inter">
-      <nav>
+    <div className="font-inter min-h-screen w-full">
+   
+      <nav className="fixed right-0 left-0 top-2">
         <Navbar />
       </nav>
-      <div>
-      
-      </div>
+      <section className="bg-gradient-to-b from-[#0f0c2998] to-[#0a0a0a99] mt-16 ">
+        <Hero />
+      </section>
+      <section>
+        <About/>
+      </section>
     </div>
+   
   );
 }
 
