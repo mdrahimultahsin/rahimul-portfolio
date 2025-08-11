@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="related z-50">
-      <div className="w-10/12 mx-auto flex justify-between items-center bg-base-200 px-5 py-2 lg:py-4 mt-4 rounded-full">
+      <div className="w-11/12 md:w-10/12 mx-auto flex justify-between items-center bg-base-200 px-5 py-2 lg:py-4 mt-4 rounded-full">
         <div>
           <a href="#" className="bg-gradient-to-r from-primary to-accent text-white btn btn-circle ">RT</a>
         </div>

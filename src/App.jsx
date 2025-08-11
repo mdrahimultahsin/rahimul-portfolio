@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
       <section className="bg-gradient-to-b from-[#0f0c2998] to-[#0a0a0a99] mt-16 ">
         <Hero />
       </section>
-      <section>
+      <section id="about">
         <About/>
+      </section>
+      <section id="skills">
+        <Skills/>
       </section>
     </div>
    

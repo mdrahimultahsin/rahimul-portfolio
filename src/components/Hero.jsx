@@ -6,10 +6,10 @@ import GradientText from "../utils/GradientText";
 
 const Hero = () => {
   return (
-    <div className="w-10/12 mx-auto  flex flex-col md:flex-row items-center justify-between  md:px-8 gap-4 md:gap-40 py-30">
+    <div className="md:w-10/12 mx-auto  flex flex-col md:flex-row items-center justify-between  md:px-8 gap-4 md:gap-40 py-30 px-4">
       <div className="space-y-3">
         <h3 className="text-xl font-semibold">Hi There,</h3>
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-3xl md:text-5xl font-bold">
           I'm Md{" "}
           <GradientText label="Rahimul"/>
           Haq
