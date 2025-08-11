@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
@@ -18,6 +19,9 @@ function App() {
       </section>
       <section id="skills">
         <Skills/>
+      </section>
+      <section id="contact">
+        <Contact/>
       </section>
     </div>
    
