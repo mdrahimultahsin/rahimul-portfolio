@@ -3,11 +3,11 @@ import {TypeAnimation} from "react-type-animation";
 import {FaDownload, FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
 import Button from "./Button";
 import GradientText from "../utils/GradientText";
-
 const Hero = () => {
   return (
     <div className="md:w-10/12 mx-auto  flex flex-col md:flex-row items-center justify-between  md:px-8 gap-4 md:gap-40 py-30 px-4">
       <div className="space-y-3">
+
         <h3 className="text-xl font-semibold">Hi There,</h3>
         <h1 className="text-3xl md:text-5xl font-bold">
           I'm Md{" "}

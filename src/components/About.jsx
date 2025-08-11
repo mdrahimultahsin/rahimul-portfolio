@@ -1,6 +1,7 @@
 import React from "react";
 import MyLottieAnimation from "./MyLottieAnimation";
 import GradientText from "../utils/GradientText";
+import { Slide } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -9,10 +10,12 @@ const About = () => {
           <span className="text-2xl">👤</span>
           About  <GradientText label="Me"/>
         </h2>
-      <div className="md:w-10/12 mx-auto px-6 lg:py-5 flex flex-col md:flex-row items-center gap-20 font-inter text-base-content bg-base-100 rounded-lg shadow-lg">
+      <div className="md:w-10/12 mx-auto px-6 pb-15 lg:pt-5 flex flex-col md:flex-row items-center gap-20 font-inter text-base-content bg-base-100 rounded-lg shadow-lg">
       
         
       {/* Text Content */}
+
+      <Slide cascade>
       <div className=" space-y-3">
         
 
@@ -50,10 +53,14 @@ Outside of coding, I love playing cricket and badminton in my free time — hobb
 
         
       </div>
+      </Slide>
       {/* Animation + Image */}
+      
       <div className="flex-shrink-0 flex flex-col items-center gap-6">
-        <MyLottieAnimation />
+        <Slide direction="right">
+        <MyLottieAnimation /></Slide>
       </div>
+      
     </div>
                 </>
   );

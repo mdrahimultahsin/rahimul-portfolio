@@ -1,10 +1,41 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaEnvelope, FaHeadset, FaPhone } from "react-icons/fa";
 import GradientText from "../utils/GradientText";
+import WhatsAppButton from "../utils/WhatsAppButton";
+import Button from "./Button";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_hf0xbmo",
+        "template_cn40tkn",
+        form.current,
+        "AVv9maXtFcxEnegt1"
+      )
+      .then(
+        () => {
+          toast.success("Your message has been sent.");
+          form.current.reset();
+        },
+        () => {
+          toast.error("Something went wrong, please try again.");
+        }
+      );
+  };
+
   return (
-    <section className="max-w-6xl mx-auto px-6 py-12 bg-base-100 rounded-lg shadow-lg font-inter">
+    <div className="md:w-10/12 mx-auto px-6 py-12 rounded-lg shadow-lg font-inter">
+      {/* Toast Container */}
+      <ToastContainer position="top-right" autoClose={3000} />
+
       {/* Section Title */}
       <h2 className="text-3xl font-bold text-center mb-12 text-base-content flex items-center justify-center gap-2">
         <FaHeadset /> Get in <GradientText label="Touch" />
@@ -12,19 +43,14 @@ const Contact = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Contact Form */}
-        <form
-          action="mailto:mdrahimultahsin@email.com"
-          method="POST"
-          encType="text/plain"
-          className="space-y-5"
-        >
+        <form ref={form} onSubmit={sendEmail} className="space-y-5">
           <div>
             <label className="block text-sm font-medium text-base-content mb-1">
               Name
             </label>
             <input
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Your Name"
               required
               className="w-full p-3 border rounded-lg bg-base-200 outline-none focus:ring-2 focus:ring-primary"
@@ -37,7 +63,7 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Your Email"
               required
               className="w-full p-3 border rounded-lg bg-base-200 outline-none focus:ring-2 focus:ring-primary"
@@ -57,12 +83,7 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            className="w-full p-3 bg-primary text-white rounded-lg hover:bg-primary/80 transition-colors"
-          >
-            Send Message
-          </button>
+          <Button label={`Send Message`} type="submit" />
         </form>
 
         {/* Contact Information */}
@@ -79,7 +100,7 @@ const Contact = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <FaEnvelope className="text-2xl text-primary" />
+            <FaEnvelope className="text-2xl text-accent" />
             <a
               href="mailto:mdrahimultahsin@email.com"
               className="text-base-content hover:underline"
@@ -89,12 +110,15 @@ const Contact = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <FaPhone className="text-2xl text-primary" />
+            <FaPhone className="text-2xl text-accent" />
             <span className="text-base-content">+880 1615861498</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <WhatsAppButton />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -28,8 +28,8 @@ const backendSkills = [
   ];
 
   return (
-    <div className="md:w-10/12 mx-auto px-6 py-12 bg-base-100 rounded-lg shadow-lg font-inter">
-      <h2 className="text-3xl font-bold text-center mb-12 text-base-content flex gap-2 justify-center items-center"><FaCode className="inline-block text-accent"/>My <GradientText label="Skills"/></h2>
+    <div className="md:w-10/12 mx-auto px-6 py-12  rounded-lg shadow-lg font-inter">
+      <h2 className="text-3xl font-bold text-center mb-12 text-base-content flex gap-2 justify-center items-center"><FaCode className="inline-block "/>My <GradientText label="Skills"/></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
 
         
@@ -38,7 +38,7 @@ const backendSkills = [
         <h3 className="text-xl font-semibold mb-4 text-accent">Frontend</h3>
         <div className="flex flex-wrap gap-6">
           {frontendSkills.map(({ name, icon: Icon }) => (
-            <div key={name} className="flex flex-col items-center bg-base-200 rounded-lg p-4 flex-1 shadow-lg">
+            <div key={name} className="flex flex-col items-center bg-base-200 rounded-lg p-4 flex-1 shadow-[0px_0px_20px_0px_rgba(0,0,255,0.2)]">
               <Icon className="text-4xl text-primary mb-2" />
               <span className="text-sm font-medium text-base-content">{name}</span>
             </div>
