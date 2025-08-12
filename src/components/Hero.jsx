@@ -7,7 +7,7 @@ import GradientText from "../utils/GradientText";
 import heroImg from "../assets/Layer 1.png"
 const Hero = () => {
   return (
-    <div className="md:w-10/12 mx-auto flex flex-col md:flex-row md:items-center justify-between md:px-8 gap-4 md:gap-40 py-30 px-8">
+    <div className="md:w-10/12 mx-auto flex flex-col md:flex-row md:items-center justify-between md:px-8 gap-4 md:gap-40 py-18 lg:pt-30 px-8">
       {/* Left Side */}
       <div className="space-y-1 md:space-y-3">
         <h3 className="text-lg md:text-xl font-semibold">Hi There,</h3>

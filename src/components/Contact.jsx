@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="md:w-10/12 mx-auto px-6 py-12 rounded-lg shadow-lg font-inter">
+    <div className="md:w-10/12 bg-base-100 mx-auto px-6 py-12 rounded-lg shadow-lg font-inter">
       {/* Toast Container */}
       <ToastContainer position="top-right" autoClose={3000} />
 

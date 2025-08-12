@@ -31,7 +31,7 @@ function App() {
       <section id="education">
         <Education />
       </section>
-      <section className="bg-base-300" id="contact">
+      <section  id="contact">
         <Contact />
       </section>
       <footer>
