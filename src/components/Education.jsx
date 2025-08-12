@@ -4,7 +4,7 @@ import GradientText from "../utils/GradientText";
 const Education = () => {
   return (
     <section id="education" className="py-10 bg-base-100">
-      <div className="lg:w-8/12 mx-auto px-4">
+      <div className="md:w-10/12 mx-auto px-8 md:px-0">
         <h2 className="text-3xl font-bold text-center mb-10 flex items-center justify-center gap-3">
           <FaUserGraduate className="text-primary" />
           My <GradientText label="Education" />
