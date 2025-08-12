@@ -6,7 +6,7 @@ import { Slide } from "react-awesome-reveal";
 const About = () => {
   return (
         <>
-        <h2 className="text-center pt-15 pb-10 lg:pb-4 gap-2 text-3xl font-bold font-heading text-base-content">
+        <h2 className="text-center  pt-15 pb-10 lg:pb-4 gap-2 text-3xl font-bold font-heading text-base-content">
           <span className="text-2xl">👤</span>
           About  <GradientText label="Me"/>
         </h2>

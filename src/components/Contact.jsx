@@ -37,7 +37,7 @@ const Contact = () => {
       <ToastContainer position="top-right" autoClose={3000} />
 
       {/* Section Title */}
-      <h2 className="text-3xl font-bold text-center mb-12 text-base-content flex items-center justify-center gap-2">
+      <h2 className="text-3xl font-bold text-center mb-12 text-base-content flex items-center justify-center gap-2 font-heading">
         <FaHeadset /> Get in <GradientText label="Touch" />
       </h2>
 

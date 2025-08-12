@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import { Outlet } from "react-router";
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
       <section className="bg-base-300" id="skills">
         <Skills />
       </section>
+      <section id="projects">
+        <Projects/>
+      </section>
+      <Outlet/>
       <section id="education">
         <Education />
       </section>

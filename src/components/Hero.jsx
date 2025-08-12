@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Left Side */}
       <div className="space-y-1 md:space-y-3">
         <h3 className="text-lg md:text-xl font-semibold">Hi There,</h3>
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
           I'm Md <GradientText label="Rahimul " /> Haq
         </h1>
 
@@ -63,7 +63,7 @@ const Hero = () => {
       </div>
 
       {/* Right Side - Profile Image with Icons */}
-      <div className="relative w-80 h-80 mx-auto">
+      <div className="relative w-80 h-80 md:w-100 md:h-100 mx-auto">
         {/* Background Circle */}
         <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary via-accent to-secondary p-1">
           <div className="w-full h-full rounded-full bg-base-100 overflow-hidden">
