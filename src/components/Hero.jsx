@@ -1,10 +1,17 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
-import { FaDownload, FaGithub, FaLinkedin, FaTwitter, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss } from "react-icons/si";
+import {TypeAnimation} from "react-type-animation";
+import {
+  FaDownload,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaReact,
+  FaNodeJs,
+} from "react-icons/fa";
+import {SiMongodb, SiTailwindcss} from "react-icons/si";
 import Button from "./Button";
 import GradientText from "../utils/GradientText";
-import heroImg from "../assets/Layer 1.png"
+import heroImg from "../assets/Layer 1.png";
 const Hero = () => {
   return (
     <div className="md:w-10/12 mx-auto flex flex-col md:flex-row md:items-center justify-between md:px-8 gap-4 md:gap-40 py-18 lg:pt-30 px-8">
@@ -58,7 +65,13 @@ const Hero = () => {
         </div>
 
         <div className="my-6">
-          <Button label="Download CV" icon={FaDownload} />
+          <a
+            href="https://drive.google.com/uc?export=download&id=1d7PTaxkknyetqHPnGfajMkKQHBNF9bst"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button label="Download Resume" icon={FaDownload} />
+          </a>
         </div>
       </div>
 
